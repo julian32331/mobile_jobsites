@@ -1,5 +1,7 @@
 {
   "name": "profi",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
