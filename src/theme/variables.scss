@@ -2,6 +2,34 @@
 // http://ionicframework.com/docs/theming/
 
 /** Ionic CSS Variables **/
+@font-face {
+  font-family: 'psr';
+  font-style: normal;
+  font-weight: normal;
+  src: url('../assets/fonts/Product Sans Regular.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'psb';
+  font-style: normal;
+  font-weight: bold;
+  src: url('../assets/fonts/Product Sans Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'psi';
+  font-style: italic;
+  font-weight: normal;
+  src: url('../assets/fonts/Product Sans Italic.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: 'psib';
+  font-style: italic;
+  font-weight: bold;
+  src: url('../assets/fonts/Product Sans Bold Italic.ttf') format("truetype");
+}
+
 :root {
   /** primary **/
   --ion-color-primary: #3880ff;
@@ -74,4 +102,5 @@
   --ion-color-light-contrast-rgb: 0, 0, 0;
   --ion-color-light-shade: #d7d8da;
   --ion-color-light-tint: #f5f6f9;
+
 }

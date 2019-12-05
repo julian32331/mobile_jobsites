@@ -1,0 +1,53 @@
+<ion-content padding>
+  <div class="wrap">
+    <ion-row class="width100 txtcenter imgwrap">
+      <img class="" [src]="data[stepIndex].img">
+    </ion-row>
+
+    <p class="title paddingt">{{data[stepIndex].title}}</p>
+    <p class="subtitle paddingt">{{data[stepIndex].subtitle}}</p>
+
+    <svg *ngIf="stepIndex==0" xmlns="http://www.w3.org/2000/svg" width="84" height="3" viewBox="0 0 84 3">
+      <g id="Group_291" data-name="Group 291" transform="translate(-42 -438)">
+        <line id="Line_32" data-name="Line 32" x2="20" transform="translate(43.5 439.5)" fill="none" stroke="#c00025"
+          stroke-linecap="round" stroke-width="3" />
+        <line id="Line_33" data-name="Line 33" x2="20" transform="translate(74.5 439.5)" fill="none" stroke="#86919d"
+          stroke-linecap="round" stroke-width="3" opacity="0.3" />
+        <line id="Line_34" data-name="Line 34" x2="20" transform="translate(104.5 439.5)" fill="none" stroke="#86919d"
+          stroke-linecap="round" stroke-width="3" opacity="0.3" />
+      </g>
+    </svg>
+
+    <svg *ngIf="stepIndex==1" xmlns="http://www.w3.org/2000/svg" width="84" height="3" viewBox="0 0 84 3">
+      <g id="Group_292" data-name="Group 292" transform="translate(-42 -438)">
+        <line id="Line_32" data-name="Line 32" x2="20" transform="translate(43.5 439.5)" fill="none" stroke="#dadee1"
+          stroke-linecap="round" stroke-width="3" />
+        <line id="Line_33" data-name="Line 33" x2="20" transform="translate(74.5 439.5)" fill="none" stroke="#c00025"
+          stroke-linecap="round" stroke-width="3" />
+        <line id="Line_34" data-name="Line 34" x2="20" transform="translate(104.5 439.5)" fill="none" stroke="#86919d"
+          stroke-linecap="round" stroke-width="3" opacity="0.3" />
+      </g>
+    </svg>
+
+    <svg *ngIf="stepIndex==2" xmlns="http://www.w3.org/2000/svg" width="84" height="3" viewBox="0 0 84 3">
+      <g id="Group_293" data-name="Group 293" transform="translate(-42 -438)">
+        <line id="Line_32" data-name="Line 32" x2="20" transform="translate(43.5 439.5)" fill="none" stroke="#dadee1"
+          stroke-linecap="round" stroke-width="3" />
+        <line id="Line_33" data-name="Line 33" x2="20" transform="translate(74.5 439.5)" fill="none" stroke="#86919d"
+          stroke-linecap="round" stroke-width="3" opacity="0.3" />
+        <line id="Line_34" data-name="Line 34" x2="20" transform="translate(104.5 439.5)" fill="none" stroke="#c00025"
+          stroke-linecap="round" stroke-width="3" />
+      </g>
+    </svg>
+
+
+    <ion-row *ngIf="stepIndex!=2" class="width100 justifybetween paddingt">
+      <label *ngIf="stepIndex==0" routerLink="/signuporlogin" routerDirection="root" class="skip"> S K I P </label>
+      <label *ngIf="stepIndex==1" (click)=" prevthrough()" class="skip">P R E V</label>
+      <label (click)="nextthrough()" class="next">N E X T</label>
+    </ion-row>
+
+    <button *ngIf="stepIndex==2" ion-button class="bottom_button" routerLink="/signuporlogin" routerDirection="root">G E T&nbsp;&nbsp; &nbsp;
+      S T A R T E D</button>
+  </div>
+</ion-content>

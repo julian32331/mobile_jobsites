@@ -1,0 +1,40 @@
+ion-content {
+  
+    .imgwrap {
+        height: 40vh;
+    }
+
+    img {
+        margin: auto;
+        margin-top: 50px;
+    }
+
+    p.title {
+        font-size: 19px;
+        font-family: psb;
+        color: #323C48;
+        height: 10vh;
+    }
+
+    p.subtitle {
+        text-align: center;
+        font-size: 12px;
+        font-family: psr;
+        color: #67727E;
+        height: 10vh;
+    }
+
+    label.skip {
+        color: #86919D;
+        font-size: 12px;
+        font-family: psb;
+    }
+
+    label.next {
+        color: #C00025;
+        font-size: 12px;
+        font-family: psb;
+    }
+
+    
+}

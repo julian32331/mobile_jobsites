@@ -24,3 +24,68 @@
 @import "~@ionic/angular/css/text-alignment.css";
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
+
+.width100 {
+    width: 100%;
+}
+
+.txtcenter {
+    text-align: center;
+}
+
+.justifybetween {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.justifyright {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+
+.paddingt  {
+    padding-top: 40px;
+}
+
+.wrap {
+    padding:0 30px;
+}
+
+button.bottom_button {
+    position: fixed;
+    bottom: 0;
+    background: #C00025;
+    height: 8vh;
+    width: 100%;
+    left: 0;
+    color: white;
+    font-size: 13px;
+    font-family: psb;
+}
+
+.input_wrap {
+    margin-top: 50px;
+    border: 1px solid #D3D4D5;
+    border-radius: 4px;   
+    color: #67727E;
+
+    ion-input {
+        font-family: psr;
+        font-size: 15px;  
+    }
+    ion-icon{
+        margin: auto;
+        font-size: 15px;  
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    span {
+        margin: auto;
+        color: #C00025;
+        font-size: 12px;
+        font-family: psr;
+        padding: 0 10px;
+    }
+}
+
