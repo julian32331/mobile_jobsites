@@ -54,15 +54,11 @@ const routes: Routes = [
       },
       {
         path: '',
-        redirectTo: '/mainboard/specialists',
+        redirectTo: '/mainboard/specialists/search',
         pathMatch: 'full'
       }
     ],
-  },
-  {
-    path: 'specialistprofile',
-    loadChildren: () => import('./specialistprofile/specialistprofile.module').then( m => m.SpecialistprofilePageModule)
-  },
+  }
 ];
 
 @NgModule({

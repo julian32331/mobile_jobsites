@@ -1,0 +1,404 @@
+<ion-header>
+  <ion-toolbar>
+      <ion-row>
+          <ion-col size="2">
+                  <ion-icon (click)="backToSpecialist()" style="font-size: 20px;" name="ios-arrow-back"></ion-icon>
+          </ion-col>
+
+          <ion-col text-center class="ddr-title">Specialist Profile</ion-col>
+
+          <ion-col size="2" text-right>
+                  <ion-icon (click)="backToSpecialist()" style="font-size: 20px;" name="close"></ion-icon>
+          </ion-col>
+  
+        </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid>
+      <ion-card style="margin: 0px;">
+          <ion-row >
+            <ion-col  size="9">
+              <ion-img text-right class="logo" src='../../../../assets/image/Ellipse 16.png'></ion-img>
+            </ion-col>
+            <ion-col size="3">
+                <ion-fab-button style="width: 35px; height: 35px; margin: 10px auto;" color="gray">
+                    <ion-icon style="font-size: 20px; color: #C00025" ios="ios-heart" md="md-heart"></ion-icon>
+                </ion-fab-button>
+            </ion-col>
+          </ion-row>
+
+          <ion-row>
+              <p class="title">Jane Cunningham </p> 
+              <ion-img src='../../../../assets/image/Path 735.png' style="width: 15px; height: 15px;" ></ion-img>
+          </ion-row>
+          <ion-row>
+              <p style="margin: 3px 105px; font-weight: bold; font-size:12px; color:#474747 ">Online 4 minutes ago</p>
+          </ion-row>
+
+          <ion-card-content style="padding-top: 2px;">
+            <ion-grid style="border-top: solid 1px gray; border-bottom: solid 1px gray;">
+                <ion-row style="border-bottom: solid 1px gray;">
+                  <ion-col size="6" text-left style="border-right: solid 1px gray;">
+                      <ion-button color="topRate" shape="round" style="height:25px; width: 120px; border-radius: 5px; text-transform: none;">
+                           <p style="font-size: 12px;"> $ Great Value</p>
+                      </ion-button>
+                  </ion-col>
+                  <!-- <ion-col size="6" style="display: flex;">
+                      <p style="margin-left: 40px; font-weight:bold; color:red;"><ion-icon class="star" name="star"></ion-icon> 5.0</p>
+                  </ion-col> -->
+                  <ion-col size="6" style="display: flex;">
+                    <ion-icon class="star" name="star"></ion-icon>
+                    <strong style="color: #C00025; margin-left: 5px; font-weight:bold;">5.0</strong>
+                 </ion-col>
+                </ion-row>
+
+                <ion-row>
+                  <ion-col size="6" text-left style="display: flex; border-right: solid 1px gray;">
+                      <p  style="margin-left: 40px; font-weight: bold; font-size: 15px; color:  #474747;">$25.00/hr</p>
+                  </ion-col>
+                  <ion-col size="6" text-right>
+                      <p text-center style="font-size: 12px; color: #C00025;"><strong style="font-size: 15px; font-weight:bold;">27</strong>  Reviews</p>
+                  </ion-col>
+                </ion-row>
+            </ion-grid>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-grid   style="margin:0px;">
+          <ion-card-content>
+            <ion-row>
+              <p class="list">
+                About this Specialist
+              </p>
+              <p style="font-size: 12px;">
+                I'm the best at what I do. Cleaning is my specalty.
+                I can clean anything in any condition. All of my products and supplies are nothing but TOP QUALITY.
+                Also if you want your home to smell and have a peaceful Aroma I'm your girl... 
+              <strong style="color: #C00025;"> Read more</strong>
+              </p>
+            </ion-row>
+
+            <ion-grid style="padding-top: 17px;">
+              <ion-row>
+                <p class="list">
+                    Overview
+                </p>
+              </ion-row>
+              <ion-row>
+                <p class="list_Content" ><ion-icon style="font-size: 20px;" name="flag"></ion-icon>
+                    Hired 54 times
+                </p>
+              </ion-row>
+              <ion-row>
+                <p class="list_Content"><ion-icon style="font-size: 20px;" name="contacts"></ion-icon>
+                    Background checked
+                </p>
+                
+              </ion-row>
+              <ion-row>
+                  <p class="list_Content">
+                    <!-- <ion-icon style="font-size: 20px;" name="people"></ion-icon> -->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="17" height="19" viewBox="0 0 24 25">
+                      <text id="_" data-name="" transform="translate(12 20)"  class="footerBtn1"  font-size="23" font-family="icofont, IcoFont"><tspan x="-11.5" y="0"></tspan></text>
+                    </svg>  
+                    8 employees
+                  </p>
+              </ion-row>
+              <ion-row>
+                  <p class="list_Content"><ion-icon style="font-size: 20px;" name="time"></ion-icon>
+                      14 years in business
+                  </p>
+              </ion-row>
+               
+            </ion-grid>
+
+            <ion-grid  style="padding-top: 17px;">
+                <ion-row>
+                  <p class="list">
+                      Business hours
+                  </p>
+                </ion-row>
+                <ion-row>
+                  <p class="list_Content"> Sun       closed
+                  </p>
+                </ion-row>
+                <ion-row>
+                  <p list_Content>
+                    Mon-Sat     10:00 a.m.-5:00 p.m
+                  </p>
+                </ion-row>
+              </ion-grid>
+
+              <ion-grid style="padding-top: 17px;">
+                  <ion-row>
+                    <p class="list">
+                        Payment methods
+                    </p>
+                  </ion-row>
+                  <ion-row>
+                    <p class="list_Content">
+                      Cash, Check, Credit card, Lendmn
+                    </p>
+                  </ion-row>
+                </ion-grid>
+          </ion-card-content>
+        </ion-grid>
+
+        <ion-grid class="eachGrid" style="margin: 0px;"> 
+          <ion-card-content>
+              <ion-grid>
+                  <ion-row>
+                      <p class="list">
+                         Photos and Videos
+                      </p>
+                  </ion-row>
+                  <ion-row>
+                    <p class="list_Content">
+                      18 photos
+                    </p>
+                  </ion-row>
+              </ion-grid>
+              <ion-slides #slides>
+                  <ion-slide>
+                      <ion-img src='../../../../assets/image/Rectangle 17.png' style="margin-right: 10px; width: 100px; height: 100px;" ></ion-img>
+                      <ion-img src='../../../../assets/image/Rectangle 18.png' style="margin-right: 10px; width: 100px; height: 100px;" ></ion-img>
+                      <ion-img  src='../../../../assets/image/Rectangle 19.png' style=" width: 100px; height: 100px;" ></ion-img>
+                  </ion-slide>
+               
+               </ion-slides>
+
+          </ion-card-content>
+        </ion-grid>
+
+        <ion-grid class="eachGrid" style="margin: 0px;"> 
+            <ion-card-content style="padding: 0px;">
+                <ion-grid style="padding-top: 17px;">
+                    <ion-row>
+                      <p class="listBig">
+                          Reviews
+                      </p>
+                    </ion-row>
+                    <ion-row>
+                      <p style="font-size: 13px; color:#67727E;"> Customers rated this specialist highly for work quality, responsiveness, and professionalism.
+                      </p>
+                    </ion-row>
+                </ion-grid>
+                <ion-grid style="padding-top: 17px;">
+                  <ion-row>
+
+                  
+                    <ion-col size="6">
+                      <ion-grid>
+                          <ion-row>
+                              <p class="listBig">
+                                  5.0
+                              </p>
+                            </ion-row>
+                            <ion-row style="padding: 10px 0px 10px 0px;">
+                              <ion-img style="font-size: 25px; color:#DAA520;" src="../../../../assets/image/start.png"></ion-img>
+                              <ion-img style="font-size: 25px; color:#DAA520;" src="../../../../assets/image/start.png"></ion-img>
+                              <ion-img style="font-size: 25px; color:#DAA520;" src="../../../../assets/image/start.png"></ion-img>
+                              <ion-img style="font-size: 25px; color:#DAA520;" src="../../../../assets/image/start.png"></ion-img>
+                              <ion-img style="font-size: 25px; color:#DAA520;" src="../../../../assets/image/start.png"></ion-img>
+                            </ion-row>
+                            <ion-row>
+                              <p style="font-size: 14px;">264 reviews
+                              </p>
+                            </ion-row>
+                      </ion-grid>
+                    </ion-col>
+                    <ion-col size="6">
+                      <ion-grid>
+                        <ion-row>
+                          <p> 5 </p>
+                          <!-- <ion-icon style="color:#DAA520; margin-right: 7px;" name="star"></ion-icon> -->
+                          <ion-img style="margin-right: 7px; height: 13px; width: 13px; color:#DAA520;" src="../../../../assets/image/start.png"></ion-img>
+                          <ion-progress-bar  style="height:10px;  width: 60px; margin-right: 10px;"  color="success" value="0.8"></ion-progress-bar>
+                          <p>77%</p>
+                        </ion-row>
+                        <ion-row>
+                          <p> 4 </p>
+                          <ion-img style="margin-right: 7px; height: 13px; width: 13px; color:#DAA520;" src="../../../../assets/image/start.png"></ion-img>
+                          <ion-progress-bar  style="height:10px;  width: 60px; margin-right: 10px;"  color="success" value="0.2"></ion-progress-bar>
+                          <p>10%</p>
+                        </ion-row>
+                        <ion-row>
+                          <p> 3 </p>
+                          <ion-img style="margin-right: 7px; height: 13px; width: 13px; color:#DAA520;" src="../../../../assets/image/start.png"></ion-img>
+                          <ion-progress-bar  style="height:10px;  width: 60px; margin-right: 10px;"  color="success" value="0.2"></ion-progress-bar>
+                          <p>6%</p>
+                        </ion-row>
+                        <ion-row>
+                            <p> 2 </p>
+                            <ion-img style="margin-right: 7px; height: 13px; width: 13px; color:#DAA520;" src="../../../../assets/image/start.png"></ion-img>
+                            <ion-progress-bar  style="height:10px;  width: 60px; margin-right: 10px;"  color="success"  value="0.2"></ion-progress-bar>
+                            <p>3%</p>
+                        </ion-row>
+                        <ion-row class="progress">
+                            <p> 1 </p>
+                            <ion-img style="margin-right: 7px; height: 13px; width: 13px; color:#DAA520;" src="../../../../assets/image/start.png"></ion-img>
+                            <ion-progress-bar  style="height:10px;  width: 60px; margin-right: 10px;"   value="0.2"></ion-progress-bar>
+                            <p>4%</p>
+                        </ion-row>
+
+
+                      </ion-grid>
+                    </ion-col>
+                  </ion-row>
+                </ion-grid>
+            </ion-card-content>
+        </ion-grid>
+
+        <ion-grid class="eachGrid" style="margin: 0px;"> 
+          <ion-card-content>
+              <ion-grid style="padding-top: 17px;">
+                  <ion-row>
+                    <ion-col size="6">
+                      <ion-grid>
+                        <ion-row>
+                            <p style="font-weight:bold; font-size:16px">
+                                Mariah G
+                            </p>
+                        </ion-row>
+                        <ion-row>
+                            <p>May 31, 2013</p>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-col>
+                    <ion-col size="6">
+                      <ion-grid>
+                          <ion-row>
+                              <p style="font-size:16px">
+                                  House Cleaning
+                              </p>
+                          </ion-row>
+                          <ion-row>
+                              <p style="margin-left: 40px; font-weight:bold; color:red;"> 5.0<ion-icon style="font-size: 20px;color:#DAA520;" name="star"></ion-icon></p>
+                          </ion-row>
+                      </ion-grid>
+                    </ion-col>
+                    
+                  </ion-row>
+                  <ion-row>
+                    <p style="font-size: 14px;"> 
+                      Jane is amazing. I've never had a cleaner home.
+                      I was shocked at the details they found and cleaned. 
+                      Incredibly kind crew, super personable and immediate...
+                    </p>
+                  </ion-row>
+              </ion-grid>
+              <ion-img src='../../../../assets/image/Rectangle 31.png' style="width: 120px; height: 120px;" ></ion-img>
+          </ion-card-content>
+        </ion-grid>
+
+        <!-- <ion-card style="margin: 0px;"> 
+            <ion-card-content>
+                <ion-grid style="padding-top: 17px;">
+                    <ion-row>
+                      <ion-col size="6">
+                        <ion-grid>
+                          <ion-row>
+                              <p style="font-weight:bold; font-size:16px">
+                                  Mariah G
+                              </p>
+                          </ion-row>
+                          <ion-row>
+                              <p>May 31, 2013</p>
+                          </ion-row>
+                        </ion-grid>
+                      </ion-col>
+                      <ion-col size="6">
+                        <ion-grid>
+                            <ion-row>
+                                <p style="font-size:16px">
+                                    House Cleaning
+                                </p>
+                            </ion-row>
+                            <ion-row>
+                                <p style="margin-left: 40px; font-weight:bold; color:red;"> 5.0<ion-icon style="font-size: 20px;color:#DAA520;" name="star"></ion-icon></p>
+                            </ion-row>
+                        </ion-grid>
+                      </ion-col>
+                      
+                    </ion-row>
+                    <ion-row>
+                      <p style="font-size: 14px;"> 
+                        Jane is amazing. I've never had a cleaner home.
+                        I was shocked at the details they found and cleaned. 
+                        Incredibly kind crew, super personable and immediate...
+                      </p>
+                    </ion-row>
+                </ion-grid>
+                <ion-img src='../../../../assets/image/Rectangle 31.png' style="width: 120px; height: 120px;" ></ion-img>
+            </ion-card-content>
+        </ion-card> -->
+
+        <!-- <ion-card style="margin: 0px;"> 
+          <ion-card-content>
+              <ion-grid style="padding-top: 17px;">
+                  <ion-row>
+                    <ion-col size="6">
+                      <ion-grid>
+                        <ion-row>
+                            <p style="font-weight:bold; font-size:16px">
+                                Mariah G
+                            </p>
+                        </ion-row>
+                        <ion-row>
+                            <p>May 31, 2013</p>
+                        </ion-row>
+                      </ion-grid>
+                    </ion-col>
+                    <ion-col size="6">
+                      <ion-grid>
+                          <ion-row>
+                              <p style="font-size:16px">
+                                  House Cleaning
+                              </p>
+                          </ion-row>
+                          <ion-row>
+                              <p style="margin-left: 40px; font-weight:bold; color:red;"> 5.0<ion-icon style="font-size: 20px;color:#DAA520;" name="star"></ion-icon></p>
+                          </ion-row>
+                      </ion-grid>
+                    </ion-col>
+                    
+                  </ion-row>
+                  <ion-row>
+                    <p style="font-size: 14px;"> 
+                      Jane is amazing. I've never had a cleaner home.
+                      I was shocked at the details they found and cleaned. 
+                      Incredibly kind crew, super personable and immediate...
+                    </p>
+                  </ion-row>
+              </ion-grid>
+              <ion-img src='../../../../assets/image/Rectangle 31.png' style="width: 120px; height: 120px;" ></ion-img>
+          </ion-card-content>
+        </ion-card> -->
+
+        <ion-card style="margin: 0px;">
+          <ion-card-content>
+            <ion-col text-center>
+                <ion-button  color="light" style="border: solid 1px; border-color: red;text-transform: none;width: 250px;">
+                   See all reviews
+                </ion-button>
+            </ion-col>
+          </ion-card-content>
+        </ion-card>
+
+        <ion-row>
+          <ion-col size="6">
+            <ion-button color="light"  style="width: 140px; margin-left: -8px; text-transform: none;">
+                Hire Specialist
+            </ion-button>
+          </ion-col>
+          <ion-col size="6">
+              <ion-button color="light" shape="round" style="width: 160px; margin-left: -5px; text-transform: none; color: black;">
+                  Invite to Request
+              </ion-button>
+          </ion-col>
+            
+        </ion-row>
+  </ion-grid>
+</ion-content>

@@ -1,0 +1,99 @@
+
+  
+  <ion-content>
+    <ion-grid>
+      <ion-row style="margin-bottom: -5px;">
+        <ion-col size="9">
+            <ion-searchbar placeholder="Search" (ionInput)="getItems($event)"></ion-searchbar>
+        </ion-col>
+        <ion-col size="3">
+            <ion-fab-button size="small" color="gray">
+                <ion-icon style="font-size: 20px;color:#C00025;" ios="ios-options" md="md-options"></ion-icon>
+            </ion-fab-button>
+        </ion-col>
+      </ion-row>
+  
+      <ion-grid *ngFor="let data of data" class="eachGrid">
+            <ion-row style="margin-bottom: -11px" (click)="specialProfile()">
+              <ion-col size="3">
+                <ion-img class="gridImg" src='../../../assets/image/Ellipse 16.png'></ion-img>
+              </ion-col>
+              <ion-col size="6">
+                <p class="name">{{data.nm}}</p>
+                <p class="title">{{data.tl}}</p>
+              </ion-col>
+              <ion-col size="3">
+                  <ion-fab-button style="width: 35px; height: 35px; margin: 10px auto;" color="gray">
+                      <ion-icon style="font-size: 20px; color:red" ios="ios-heart" md="md-heart"></ion-icon>
+                  </ion-fab-button>
+              </ion-col>
+            </ion-row>
+              
+          <ion-card-content style="padding-top: 2px;">
+            <ion-row >
+              <ion-col size="8" text-left>
+                 <p class="title">$25.00/hr</p>
+              </ion-col>
+               <ion-col size="4" style="display: flex;">
+                  <ion-icon class="star" name="star"></ion-icon>
+                  <p > <strong>5.0</strong> Rating</p>
+               </ion-col>
+            </ion-row>
+            <ion-row style="margin-top: -13px;" >
+              <ion-col size="6" text-left style="display: flex;">
+                  <ion-button color="topRate" shape="round" style="height:24px; border-radius: 5px; text-transform: none;">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="11" viewBox="0 0 12 11">
+                      <text id="_" data-name="" transform="translate(0 9)" fill="#fff" font-size="10" font-family="FontAwesome5Free-Solid, 'Font Awesome 5 Free'"><tspan x="0" y="0"></tspan></text>
+                    </svg>
+                      <p style="font-size: 12px;">Top Rated</p>
+                  </ion-button>
+              </ion-col>
+              <ion-col size="6" text-right>
+                  <p > 27 Review</p>
+              </ion-col>
+            </ion-row>
+  
+            <ion-row>
+                <p class="description">
+                   {{ data.des}}
+                </p>
+            </ion-row>
+  
+            <ion-row>
+              <ion-col size="6">
+                <ion-button color="dangerCus" shape="round" class="hire">
+                    Hire Specialist
+                </ion-button>
+              </ion-col>
+              <ion-col size="6">
+                  <ion-button color="light" shape="round" class="invite">
+                      Invite to Request
+                  </ion-button>
+              </ion-col>
+                
+            </ion-row>
+          </ion-card-content>
+      </ion-grid>
+  
+      <ion-row class="eachGrid" style="margin-bottom: -5px; height: 70px;" >
+          <ion-col size="4" style="display: flex;">
+              
+              <ion-icon style="margin-left: 8px; margin-top: 13px; font-size: 20px;" name="ios-arrow-back"></ion-icon>
+              <p style="font-size: 14px;">Previous</p>
+          </ion-col>
+          <ion-col size="4">
+              <p text-center style="font-size: 14px;">1 of 500</p>
+          </ion-col>
+          <ion-col size="4" style="display: flex;">
+              <p style=" margin-left: 45px;  font-size: 14px;">Next</p>
+              <ion-icon style="font-size: 20px; margin-top: 12px;" name="ios-arrow-forward"></ion-icon>
+              
+          </ion-col>
+  
+        </ion-row>
+  
+    </ion-grid>
+  
+  
+  </ion-content>
+  

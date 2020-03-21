@@ -1,24 +1,41 @@
 <ion-tabs>
   <ion-tab-bar slot="bottom">
-    <ion-tab-button tab="specialists">
-      <ion-icon name="calendar"></ion-icon>
-      <ion-label>Specialists</ion-label>
-      <ion-badge>6</ion-badge>
+    <ion-tab-button [ngClass]="{'footerBtn2' : step == 0}"  tab="specialists" (click)="special()">
+      <!-- <ion-icon class="footerIcon" style="fill: #C00025;" src="/assets/image/special.svg"></ion-icon> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 24 25">
+        <text id="_" data-name="" transform="translate(12 20)"    font-size="23" font-family="icofont, IcoFont"><tspan x="-11.5" y="0"></tspan></text>
+      </svg>
+      <ion-label style="font-size: 10px;">Specialists</ion-label>
+      
     </ion-tab-button>
 
-    <ion-tab-button tab="services">
-      <ion-icon name="contacts"></ion-icon>
-      <ion-label>Services</ion-label>
+    <ion-tab-button class="footerBtn1" [ngClass]="{'footerBtn2' : step == 1}" tab="services" (click)="service()">
+      <!-- <ion-icon class="footerIcon" src="/assets/image/service.svg"></ion-icon> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 24 25">
+        <text id="_" data-name="" transform="translate(12 20)"  [ngClass]="{'footerBtn2' : step == 1}" font-size="23" font-family="icofont, IcoFont"><tspan x="-11.5" y="0"></tspan></text>
+      </svg>
+      
+      <ion-label [ngClass]="{'footerBtn2' : step == 1}" style="font-size: 10px;">Services</ion-label>
     </ion-tab-button>
 
-    <ion-tab-button tab="messages">
-      <ion-icon name="map"></ion-icon>
-      <ion-label>Messages</ion-label>
+    <ion-tab-button class="footerBtn1" [ngClass]="{'footerBtn2' : step == 2}" tab="messages" (click)="message()">
+      <!-- <ion-icon class="footerIcon" src="/assets/image/message.svg"></ion-icon> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 24 25">
+        <text id="_" data-name="" transform="translate(12 20)" [ngClass]="{'footerBtn2' : step == 2}" font-size="23" font-family="icofont, IcoFont"><tspan x="-11.5" y="0"></tspan></text>
+      </svg>
+      
+      <ion-label [ngClass]="{'footerBtn2' : step == 2}" style="font-size: 10px;">Messages</ion-label>
+
     </ion-tab-button>
 
-    <ion-tab-button tab="more">
-      <ion-icon name="information-circle"></ion-icon>
-      <ion-label>More</ion-label>
+    <ion-tab-button class="footerBtn1" [ngClass]="{'footerBtn2' : step == 3}" tab="more" (click)="more()">
+      <!-- <ion-icon class="footerIcon" src="/assets/image/more.svg"></ion-icon> -->
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="25" viewBox="0 0 24 25">
+        <text id="_" data-name="" transform="translate(12 20)" [ngClass]="{'footerBtn2' : step == 3}" font-size="23" font-family="icofont, IcoFont"><tspan x="-11.5" y="0"></tspan></text>
+      </svg>
+      
+      <ion-label [ngClass]="{'footerBtn2' : step == 3}" style="font-size: 10px;">More</ion-label>
+      <ion-badge color="badge" style="margin: -9px -28px;">2</ion-badge>
     </ion-tab-button>
   </ion-tab-bar>
 </ion-tabs>

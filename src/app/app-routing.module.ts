@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'walkthrough', pathMatch: 'full' },
+  { path: '', redirectTo: 'mainboard', pathMatch: 'full' },
   { path: 'home', loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)},   {
     path: 'walkthrough',
     loadChildren: () => import('./walkthrough/walkthrough.module').then( m => m.WalkthroughPageModule)

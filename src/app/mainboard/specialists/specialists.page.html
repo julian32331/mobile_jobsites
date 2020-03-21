@@ -1,9 +1,29 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>specialists</ion-title>
+    <ion-title class="ddr-title" text-center>Specialists</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-grid>
+    <ion-row style="padding: 25px;">
+        <ion-tabs selectedIndex="1">
+            <ion-tab-bar slot="top">
+              <ion-tab-button (click)="goSearch()" [ngClass]="{'topBarName' : stepIndex == 0}">
+                <ion-label  [ngClass]="{'topBar' : stepIndex == 0}">Search</ion-label>
+              </ion-tab-button>
+          
+              <ion-tab-button (click)="goHired()"  [ngClass]="{'topBarName' : stepIndex == 1}">
+                <ion-label [ngClass]="{'topBar' : stepIndex == 1}">Hired</ion-label>
+              </ion-tab-button>
+          
+              <ion-tab-button (click)="goSaved()" [ngClass]="{'topBarName' : stepIndex == 2}">
+                <ion-label [ngClass]="{'topBar' : stepIndex == 2}">Saved</ion-label>
+              </ion-tab-button>
+            </ion-tab-bar>
+          </ion-tabs>
+    </ion-row>
 
+  </ion-grid>
 </ion-content>
+
